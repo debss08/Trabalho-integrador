@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+<main id="welcomePage">
+    <div class="containerWelcome">
+        <h1>Criar conta</h1>
+        <form action="../php/processa_cadastro.php" method="POST">
+            <h3>Nome</h3>
+            <input type="text" class="input signin" name="nome" required>
+
+            <h3>Cargo na biblioteca</h3>
+            <input type="text" class="input signin" name="cargo" required>
+
+            <h3>Matrícula</h3>
+            <input type="text" class="input signin" name="matricula" required>
+
+            <h3>Senha</h3>
+            <input type="password" class="input signin" name="senha" required>
+
+            <button type="submit" class="btn login">Finalizar cadastro</button>
+        </form>
+
+        <a class="btn signin" href="login.html">Voltar para o login</a>
+    </div>
+</main>
+</body>
+</html>
